@@ -36,7 +36,33 @@ app.set('views', __dirname + '/views');
 app.get('/', function (req, res) {
     res.render('index');
 });
+app.get('/overview', function (req, res) {
+    res.render('content-template', {
+        pageTitle: 'Overview',
+        pageContent: 'One Piece is a Japanese manga and anime series...'
+    });
+});
 
+app.get('/characters', function (req, res) {
+    res.render('content-template', {
+        pageTitle: 'Characters',
+        pageContent: 'One Piece features a vast array of memorable characters...'
+    });
+});
+
+app.get('/world', function (req, res) {
+    res.render('content-template', {
+        pageTitle: 'World',
+        pageContent: 'The world of One Piece is divided into four seas and the Grand Line...'
+    });
+});
+
+app.get('/story', function (req, res) {
+    res.render('content-template', {
+        pageTitle: 'Story',
+        pageContent: 'One Piece unfolds an epic and adventurous story as Monkey D. Luffy, along with his crew...'
+    });
+});
 app.post('/', function (req, res) {
     const form = req.body;
     console.log('Form data:', form);
