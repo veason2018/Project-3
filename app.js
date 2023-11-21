@@ -4,6 +4,11 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+// Define a route for the login page
+app.get('/login', function (req, res) {
+    res.render('login'); // Render the login view
+});
+
 const mongoose = require('mongoose');
 mongoose.connect("mongodb://127.0.0.1:27017/login");
 // Uncommented the UserSchema by - prayasHOD
