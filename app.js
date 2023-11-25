@@ -39,28 +39,28 @@ app.get('/', function (req, res) {
 app.get('/overview', function (req, res) {
     res.render('content-template', {
         pageTitle: 'Overview',
-        pageContent: 'One Piece is a Japanese manga and anime series...'
+        pageContent: 'The story follows Monkey D. Luffy, a young and ambitious pirate with the goal of finding the legendary treasure known as "One Piece" and becoming the Pirate King. Luffy gains the ability to stretch his body like rubber after accidentally eating a Devil Fruit, a rare and mysterious fruit that grants unique powers at the cost of the ability to swim. Along his journey, Luffy assembles a diverse and colorful crew of pirates, known as the Straw Hat Pirates, each with their own dreams and ambitions.The world of "One Piece" is vast and consists of numerous islands, seas, and powerful organizations. The Grand Line, a dangerous and unpredictable sea, is central to the story and holds the key to reaching the final destination of the treasure, the elusive Raftel (later revealed to be called Laugh Tale).'
     });
 });
 
 app.get('/characters', function (req, res) {
     res.render('content-template', {
         pageTitle: 'Characters',
-        pageContent: 'One Piece features a vast array of memorable characters...'
+        pageContent: 'One Piece features a vast array of memorable characters.The characters in "One Piece" are diverse and memorable, ranging from powerful pirates and marines to mystical creatures and revolutionary leaders. Key members of the Straw Hat crew include Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, and Jinbe.'
     });
 });
 
 app.get('/world', function (req, res) {
     res.render('content-template', {
         pageTitle: 'World',
-        pageContent: 'The world of One Piece is divided into four seas and the Grand Line...'
+        pageContent: 'The world of "One Piece" is a vast and imaginative one, filled with diverse islands, seas, and cultures. The central setting is the Grand Line, a dangerous and unpredictable sea that houses powerful pirates, marines, and mysterious islands. The world is divided into four seas, and at the intersection of these seas lies the Grand Line, leading to the ultimate destination of Raftel.'
     });
 });
 
 app.get('/story', function (req, res) {
     res.render('content-template', {
         pageTitle: 'Story',
-        pageContent: 'One Piece unfolds an epic and adventurous story as Monkey D. Luffy, along with his crew...'
+        pageContent: 'One Piece unfolds an epic and adventurous story as Monkey D. Luffy, along with his crew.The story follows Monkey D. Luffy, a young and ambitious pirate with the goal of finding the legendary treasure known as "One Piece" and becoming the Pirate King. Luffy gains the ability to stretch his body like rubber after accidentally eating a Devil Fruit, a rare and mysterious fruit that grants unique powers at the cost of the ability to swim. Along his journey, Luffy assembles a diverse and colorful crew of pirates, known as the Straw Hat Pirates, each with their own dreams and ambitions.The world of "One Piece" is vast and consists of numerous islands, seas, and powerful organizations. The Grand Line, a dangerous and unpredictable sea, is central to the story and holds the key to reaching the final destination of the treasure, the elusive Raftel (later revealed to be called Laugh Tale).'
     });
 });
 app.post('/', function (req, res) {
